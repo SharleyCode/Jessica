@@ -1,4 +1,4 @@
-package adapter;
+package com.lx.jessica.adapter;
 
 import android.content.Intent;
 import android.os.Bundle;

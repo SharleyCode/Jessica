@@ -1,4 +1,4 @@
-package adapter;
+package com.lx.jessica.adapter;
 
 import android.app.Fragment;
 import android.os.Bundle;
