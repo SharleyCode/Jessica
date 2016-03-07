@@ -4,8 +4,76 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.lx.jessica.activity.MainActivity">
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="sharley"/>
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_above="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:layout_alignParentBottom="true">
+
+        <RadioButton
+            android:id="@+id/rb_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_price_selector"
+            android:textColor="@color/tab_text_select"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:text="全球比价"/>
+        <RadioButton
+            android:id="@+id/rb_shop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_shop_selector"
+            android:textColor="@color/tab_text_select"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:text="目的地商城"/>
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_home_selector"
+            android:textColor="@color/tab_text_select"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:text="首页"/>
+        <RadioButton
+            android:id="@+id/rb_memo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_memo_selector"
+            android:textColor="@color/tab_text_select"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:text="旅行便笺"/>
+        <RadioButton
+            android:id="@+id/rb_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_mine_selector"
+            android:textColor="@color/tab_text_select"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:text="个人中心"/>
+
+    </RadioGroup>
 </RelativeLayout>
