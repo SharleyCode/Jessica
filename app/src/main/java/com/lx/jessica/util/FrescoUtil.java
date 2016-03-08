@@ -13,6 +13,8 @@ import com.facebook.imagepipeline.core.ImagePipelineConfig;
  */
 public class FrescoUtil {
 
+    private static SimpleDraweeView sdv;
+
     public static void initFresco(Context context){
         Fresco.initialize(context);
     }
@@ -41,4 +43,5 @@ public class FrescoUtil {
                 .build();
         simpleDraweeView.setController(build);
     }
+
 }
