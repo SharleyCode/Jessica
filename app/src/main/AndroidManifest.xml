@@ -15,10 +15,10 @@
         android:theme="@style/AppTheme">
 
         <!-- 主页面的Activity -->
-        <activity android:name=".activity.MainActivity"/>
+        <activity android:name=".activity.MainActivity" />
 
         <!-- 启动页面的Activity -->
-        <activity android:name=".activity.StartActivity" >
+        <activity android:name=".activity.StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,7 +27,7 @@
         </activity>
 
         <!-- 引导页面的Activity -->
-        <activity android:name=".activity.GuideActivity"></activity>
+        <activity android:name=".activity.GuideActivity" />
     </application>
 
 </manifest>

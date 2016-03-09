@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">杰西卡</string>
+    <string name="text_search">输入商品名/品牌进行搜索</string>
 </resources>

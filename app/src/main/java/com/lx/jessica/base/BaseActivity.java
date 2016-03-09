@@ -92,6 +92,9 @@ public abstract class BaseActivity extends AppCompatActivity {
             showFragment = fragmentByTag;
         } else {
             BaseFragment baseFragment = BaseFragment.getInstance(fclass);
+            System.out.print(fl_resid);
+            System.out.print(baseFragment);
+            System.out.print(fclass.getName());
             fragmentTransaction.add(fl_resid, baseFragment, fclass.getName());
             showFragment = baseFragment;
         }

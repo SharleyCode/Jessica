@@ -1,16 +1,14 @@
 package com.lx.jessica.activity;
 
 import android.os.SystemClock;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.KeyEvent;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.lx.jessica.R;
 import com.lx.jessica.base.BaseActivity;
 import com.lx.jessica.fragment.HomeFragment;
+import com.lx.jessica.fragment.Home_Fragment;
 import com.lx.jessica.fragment.MemoFragment;
 import com.lx.jessica.fragment.MyFragment;
 import com.lx.jessica.fragment.PriceFragment;
@@ -57,7 +55,7 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
                 fragmentManager(R.id.fl_main, ShopFragment.class);
                 break;
             case R.id.rb_home://首页
-                fragmentManager(R.id.fl_main, HomeFragment.class);
+                fragmentManager(R.id.fl_main, Home_Fragment.class);
                 break;
             case R.id.rb_memo://旅游便笺
                 fragmentManager(R.id.fl_main, MemoFragment.class);

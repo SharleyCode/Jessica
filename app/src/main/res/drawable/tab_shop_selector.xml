@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:drawable="@mipmap/btn_bourn"/>
+    <item android:drawable="@mipmap/btn_bourn" android:state_checked="false"/>
     <item android:drawable="@mipmap/btn_bourn_click" android:state_checked="true"/>
 
 </selector>
