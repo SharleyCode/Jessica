@@ -7,6 +7,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
+import com.lx.jessica.R;
+
 import butterknife.ButterKnife;
 
 /**
@@ -43,9 +45,16 @@ public abstract class BaseActivity extends AppCompatActivity {
      * @return
      */
     protected abstract int getViewResid();
-
     /**
-     * 启动Activity的过场动画
+     * 带默认过程动画的启动Activity方式
+     * @param intent
+     */
+    @Override
+    public void startActivity(Intent intent) {
+        this.startActivity(intent, R.anim.activity_in_left, R.anim.activity_out_down);
+    }
+    /**
+     * 自定义Activity的过场动画
      * @param intent
      * @param animin
      * @param animout
@@ -88,4 +97,5 @@ public abstract class BaseActivity extends AppCompatActivity {
         }
         fragmentTransaction.commit();
     }
+
 }

@@ -112,9 +112,7 @@ public abstract class BaseFragment<K extends Serializable> extends Fragment {
     /**
      * 获得实体数据方法 -- 通过bindDatas(K ks)方式传值时需要重写这个方法
      */
-    protected void getDatas(K ks){
-
-    }
+    protected void getDatas(K ks){}
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
