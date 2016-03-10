@@ -5,15 +5,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="asds"/>
-
     <com.daimajia.slider.library.SliderLayout
-        android:id="@+id/slider"
+        android:id="@+id/sl_pager"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        />
+        android:layout_height="300dp">
+
+    </com.daimajia.slider.library.SliderLayout>
+
+
 
 </LinearLayout>
