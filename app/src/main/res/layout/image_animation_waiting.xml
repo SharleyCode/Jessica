@@ -5,3 +5,4 @@
     android:id="@+id/image_animation"
     android:src="@drawable/animation_waiting"
     android:visibility="invisible"/>
+
