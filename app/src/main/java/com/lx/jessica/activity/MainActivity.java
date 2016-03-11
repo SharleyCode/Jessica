@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import com.lx.jessica.R;
 import com.lx.jessica.base.BaseActivity;
+import com.lx.jessica.fragment.ClassFragment;
 import com.lx.jessica.fragment.HomeFragment;
 import com.lx.jessica.fragment.MemoFragment;
 import com.lx.jessica.fragment.MyFragment;

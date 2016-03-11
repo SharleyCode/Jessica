@@ -3,31 +3,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- 等待动画 -->
     <include
         layout="@layout/image_animation_waiting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"/>
 
+
     <LinearLayout
+        android:id="@+id/ll_banner"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <!-- 搜索框 -->
         <RelativeLayout
-            android:id="@+id/btn_search"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:layout_margin="5dp"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:background="@drawable/textview_border">
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/tv_search"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:drawableLeft="@mipmap/nav_btn_search_normal"
             android:text="@string/text_search"
-            android:background="@drawable/textview_border"/>
+            android:layout_marginLeft="210dp"
+            android:textColor="#e4dada"/>
 
         </RelativeLayout>
+
+
+        <!-- tabLayout布局 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
     </LinearLayout>
+
+
 </RelativeLayout>
