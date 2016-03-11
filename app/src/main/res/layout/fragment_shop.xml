@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="目的地商城fragment"/>
-</LinearLayout>
+        android:text="中国.China"
+        android:drawableRight="@drawable/destination_dropdown"
+        android:id="@+id/btn_des"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/umeng_socialize_search_icon"
+        android:id="@+id/iv_search"
+        android:layout_alignBottom="@+id/btn_des"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+         />
+
+
+</RelativeLayout>

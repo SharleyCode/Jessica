@@ -28,6 +28,8 @@
 
         <!-- 引导页面的Activity -->
         <activity android:name=".activity.GuideActivity" />
+        <!-- 选择目的地页面的activity-->
+        <activity android:name=".activity.SelecDesActivity"/>
     </application>
 
 </manifest>
