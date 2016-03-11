@@ -28,6 +28,7 @@
 
         <!-- 引导页面的Activity -->
         <activity android:name=".activity.GuideActivity" />
+        <activity android:name=".activity.SearchActivity"></activity>
     </application>
 
 </manifest>

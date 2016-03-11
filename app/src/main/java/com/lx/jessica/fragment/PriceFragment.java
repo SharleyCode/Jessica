@@ -1,5 +1,6 @@
 package com.lx.jessica.fragment;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -12,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.lx.jessica.R;
+import com.lx.jessica.activity.SearchActivity;
 import com.lx.jessica.base.BaseFragment;
 
 import java.util.ArrayList;
@@ -25,10 +27,8 @@ public class PriceFragment extends BaseFragment implements View.OnClickListener 
     private ViewPager mPager;
     private FragmentPagerAdapter mAdapter;
     private List<Fragment> mFragments = new ArrayList<Fragment>();
-    private TextView tv_brand, tv_class;
-    private View view;
-    private View view_class;
-    private View view_brand;
+    private TextView tv_brand, tv_class, tv_search;
+    private View view, view_class, view_brand;
 
     @Override
     protected int getViewResid() {
@@ -40,6 +40,7 @@ public class PriceFragment extends BaseFragment implements View.OnClickListener 
         view = inflater.inflate(R.layout.fragment_price, container, false);
         initLayout();
 
+        tv_class.performClick();
         mAdapter = new FragmentPagerAdapter(getChildFragmentManager()) {
             @Override
             public Fragment getItem(int position) {
@@ -68,10 +69,14 @@ public class PriceFragment extends BaseFragment implements View.OnClickListener 
                     case 0:
                         tv_class.setTextColor(Color.rgb(25, 209, 206));
                         tv_brand.setTextColor(Color.rgb(156,163,162));
+                        view_class.setBackgroundColor(Color.rgb(25, 209, 206));
+                        view_brand.setBackgroundColor(Color.rgb(156,163,162));
                         break;
                     case 1:
                         tv_brand.setTextColor(Color.rgb(25, 209, 206));
                         tv_class.setTextColor(Color.rgb(156,163,162));
+                        view_brand.setBackgroundColor(Color.rgb(25, 209, 206));
+                        view_class.setBackgroundColor(Color.rgb(156,163,162));
                         break;
                 }
                 currentIndex = position;
@@ -92,13 +97,18 @@ public class PriceFragment extends BaseFragment implements View.OnClickListener 
     private void initLayout() {
         tv_class = (TextView) view.findViewById(R.id.tv_class);
         tv_brand = (TextView) view.findViewById(R.id.tv_brand);
+        tv_search = (TextView) view.findViewById(R.id.tv_search);
+
         view_class = view.findViewById(R.id.view_class);
         view_brand = view.findViewById(R.id.view_brand);
+
         mPager = (ViewPager) view.findViewById(R.id.vp_tab);
+
 
 
         tv_brand.setOnClickListener(this);
         tv_class.setOnClickListener(this);
+        tv_search.setOnClickListener(this);
 
         ClassFragment f1 = new ClassFragment();
         BrandFragment f2 = new BrandFragment();
@@ -123,6 +133,11 @@ public class PriceFragment extends BaseFragment implements View.OnClickListener 
                 view_brand.setBackgroundColor(Color.rgb(25, 209, 206));
                 view_class.setBackgroundColor(Color.rgb(156,163,162));
                 mPager.setCurrentItem(1);
+                break;
+            case R.id.tv_search:
+                getActivity().startActivity(new Intent(getActivity(), SearchActivity.class));
+                break;
+            default:
                 break;
         }
     }
