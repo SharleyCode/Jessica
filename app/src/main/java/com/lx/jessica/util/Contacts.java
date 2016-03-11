@@ -11,7 +11,7 @@ public class Contacts {
     /** 是第一次运行标识 */
     public final static int IS_FIRST = -1;
     /** 选择目的地的请求码 */
-    public final static int REQUEST_DES =0x11;
+    public final static int REQUEST_DES = 0x11;
     /** 选择目的地的返回码 */
     public final static int RESULT_DES = 0x12;
 
