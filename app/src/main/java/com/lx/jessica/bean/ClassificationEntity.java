@@ -7,12 +7,6 @@ import java.util.List;
  */
 public class ClassificationEntity {
 
-    /**
-     * categorypicUrl : http://7xloyz.com2.z0.glb.qiniucdn.com/globalprice_sort_beauty%402x.png
-     * isLowPrice : null
-     * categoryId : 1046
-     * categoryName : 个护美妆
-     */
 
     private List<ObjEntity> obj;
 

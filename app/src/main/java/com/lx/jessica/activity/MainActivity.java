@@ -2,11 +2,15 @@ package com.lx.jessica.activity;
 
 import android.os.SystemClock;
 import android.view.KeyEvent;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.lx.jessica.R;
 import com.lx.jessica.base.BaseActivity;
+import com.lx.jessica.fragment.ClassFragment;
 import com.lx.jessica.fragment.HomeFragment;
 import com.lx.jessica.fragment.MemoFragment;
 import com.lx.jessica.fragment.MyFragment;
@@ -19,7 +23,6 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
     private RadioGroup radioGroup;
     private long mExitTime = 0;
     public static final int EXIT_TIME_GAP = 2000;
-
     @Override
     protected int getViewResid() {
         return R.layout.activity_main;
@@ -37,6 +40,7 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
 
         L.d("屏幕宽高：" + getResources().getDisplayMetrics().widthPixels + " "
                 + getResources().getDisplayMetrics().heightPixels);
+
     }
 
     /**
