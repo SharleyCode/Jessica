@@ -6,8 +6,7 @@ import com.lx.jessica.R;
 import com.lx.jessica.base.BaseActivity;
 
 /***
- *  目的地选择页面activity
- **/
+ *  目的地选择页面activity ***/
 public class SelecDesActivity extends BaseActivity{
     private ListView lvDes;
     @Override
