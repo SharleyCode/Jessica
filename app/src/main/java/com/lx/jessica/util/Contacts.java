@@ -27,4 +27,6 @@ public class Contacts {
     /** 经典大牌 SK-II  GUERLAIN */
     String SK = "http://app.interface.jescard.com//categoryBrand/getCategoryList.html";
     String GUERLAIN = " http://app.interface.jescard.com//categoryBrand/getCategoryList.html";
+    /** 目的地选择接口*/
+    String DESTINATION="http://app.interface.jescard.com//country/selectCountryList.html";
 }
