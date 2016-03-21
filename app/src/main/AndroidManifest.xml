@@ -3,8 +3,8 @@
     package="com.lx.jessica">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:name=".util.APPContext"
@@ -28,7 +28,8 @@
 
         <!-- 引导页面的Activity -->
         <activity android:name=".activity.GuideActivity" />
-        <activity android:name=".activity.SearchActivity"></activity>
+        <!-- 选择目的地页面的activity-->
+        <activity android:name=".activity.SelecDesActivity"/>
     </application>
 
 </manifest>
