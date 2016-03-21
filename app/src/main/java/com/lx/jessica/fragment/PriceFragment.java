@@ -142,4 +142,5 @@ public class PriceFragment extends BaseFragment implements View.OnClickListener 
         }
     }
 
+
 }

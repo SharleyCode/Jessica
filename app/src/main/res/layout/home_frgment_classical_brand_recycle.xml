@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:id="@+id/recycle_item"
+    android:layout_width="111dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F2F2">
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="#373737"
+        android:background="#fff"
+        />
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sm"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        app:placeholderImageScaleType="fitXY"
+        />
+</LinearLayout>

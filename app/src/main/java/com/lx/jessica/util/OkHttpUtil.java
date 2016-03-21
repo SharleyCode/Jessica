@@ -1,6 +1,7 @@
 package com.lx.jessica.util;
 
 import android.os.Handler;
+import android.util.Log;
 
 import java.io.IOException;
 import java.util.Map;
@@ -53,6 +54,7 @@ public class OkHttpUtil {
                     @Override
                     public void run() {
                         if (onDownDataListener != null){
+                            Log.d("print",url+"-----"+str);
                             onDownDataListener.onResponse(url, str);
                         }
                     }

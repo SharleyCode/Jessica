@@ -5,36 +5,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.daimajia.slider.library.SliderLayout
-        android:id="@+id/sl_pager"
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_homefragment"
         android:layout_width="match_parent"
-        android:layout_height="300dp">
+        android:layout_height="match_parent">
 
-    </com.daimajia.slider.library.SliderLayout>
+    </android.support.v7.widget.RecyclerView>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#000"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/iv_brand"
-            android:layout_width="0dp"
-            android:layout_height="110dp"
-            android:layout_weight="1"
-            android:src="@drawable/brand"
-            android:scaleType="fitXY"/>
-
-        <ImageView
-            android:id="@+id/iv_classification"
-            android:layout_width="0dp"
-            android:layout_height="110dp"
-            android:layout_weight="1"
-            android:layout_marginLeft="0.1dp"
-            android:src="@drawable/classification"
-            android:scaleType="fitXY"/>
-    </LinearLayout>
 
 
 
